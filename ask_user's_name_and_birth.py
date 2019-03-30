@@ -11,7 +11,7 @@ def check_birth_format(birth):
         return int(birth)
     else:
         print("your input not matches the format. Maybe it's not in yyyy format, e.g 1996. Please enter it again!")
-        input_birth = input("please input your name:")
+        input_birth = input("please input your birth:")
         check_birth_format(input_birth)
 
 
