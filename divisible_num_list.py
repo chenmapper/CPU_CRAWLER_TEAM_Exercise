@@ -14,18 +14,7 @@ match = re.match(num_pattern, number_str.strip())
 
 number_int = int(number_str)
 
-"""failure. Maybe it is local variable in while. What about variable in if or for?
-if match:
-    num = 1
-    result_list = []
-    while num <= number_int and num%number_int == 0:
-        result_list.append(num)
-        num += 1
-"""
-"""try to consider variable in whie"""
-if match:
-
-
-
+"""first failure debug long time finding num%number_int -> number_int%num"""
+result_list = [x for x in range(1,number_int+1) if number_int%x==0]
 
 print(result_list)
