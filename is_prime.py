@@ -29,7 +29,7 @@ def is_prime2(num):
         print('prime')
     else:
         flag = 1
-        for n in range(2,num): #no +1
+        for n in range(2,num): #don't need to +1
             if num%n == 0:
                 print('not prime')
                 flag = 0
